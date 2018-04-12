@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Latitude Analysis - Humidity</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">    
+</head>
+
+<body>
+
+        <script
+        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+        crossorigin="anonymous"></script>
+
+       
+
+    <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+                    &nbsp; L<strong>attitude</strong> &nbsp;
+                    <span class="glyphicon glyphicon-sunglasses" aria-hidden="true"></span>
+                </a>
+                </div>
+            
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class ='glyphicon glyphicon-stats' aria-hidden='true'></span>&nbsp; Plots <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="maxtemp.html">Max Temperature</a></li>
+                        <li><a href="humidity.html">Humidity</a></li>
+                        <li><a href="cloudiness.html">Cloudiness</a></li>
+                        <li><a href="windspeed.html">Wind Speed</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                    </li>
+                    <li><a href="comparison.html"><span class ='glyphicon glyphicon-random' aria-hidden='true'></span>&nbsp; Comparison</a></li>
+                    <li><a href="data.html"><span class ='glyphicon glyphicon-floppy-disk' aria-hidden='true'></span>&nbsp; Data</a></li>
+                </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+            </nav>    
+    
+            <div class="row">
+                    <div class='container' >
+                    <div class="jumbotron col-md-6" style="margin:0">
+                        <font align='center'>
+                            <h3><strong>Latitude</strong> vs. Humidity </h3>
+                            
+                            <hr>
+                            <a href="latitudeVhumidity.png"><img style="height: 100%; width: 100%; display: block;" src="latitudeVhumidity.png" alt="Scatter plot of Humidity values base on longitude"/></a> 
+                            <p><br/>
+                                This graph tells us nothing, other than the fact that it's a hot mess. It would seem to suggest a hyperbolic shape, possibly
+                                and inverted cone with its base at the 0 &#176; point. 
+                                <br/><br/>
+                                More data is needed to determine if this is just an optical illusion. One man's invisible inverted cone may be another
+                                man's invisible frosty the snowman (with corncob pipe and button nose)
+                                
+                            </p></font>
+                        </div>
+                 
+                    <div class='col-md-5 col-md-offset-1'>
+                    <div class="jumbotron  " style="margin:0 auto;">
+                  
+                        <h2 align='center'>Visualizations </h2>
+                        <hr>
+            
+                        <div class='row'>
+                            <font align='center'>
+                        <div class="card border-success mb-3 col-md-6">
+                          <div class="card-header">vs Max Temperature</div>
+                          <a href="maxtemp.html"><img style="height: 100%; width: 100%; display: block;" src="latitudeVmaxtemperature.png" alt="Max Temperature vs. latitude"></a>
+                        </div>
+                  
+                        <div class="card border-success mb-3 col-md-6">
+                          <div class="card-header"><br/>vs Humidity</div>
+                          <a href="humidity.html"><img style="height: 100%; width: 100%; display: block;" src="latitudeVhumidity.png" alt="Humidity vs. latitude"></a>    
+                        </div>
+                  
+                      </div>
+                  
+                      <div class='row'>
+                  
+                        <div class="card border-success mb-3 col-md-6" >
+                            <div class="card-header"><br/>vs Cloudiness</div>
+                            <a href="cloudiness.html"><img style="height: 100%; width: 100%; display: block;" src="latitudeVcloudiness.png" alt="cloudiness vs. latitude"></a>           
+                        </div>
+                  
+                        <div class="card border-success mb-3 col-md-6" >
+                              <div class="card-header"><br/>vs Wind Speed</div>
+                              <a href="windspeed.html"><img style="height: 100%; width: 100%; display: block;" src="latitudeVwindspeed.png" alt="wind_speed vs. latitude"></a>             
+                        </div>
+                    </font>
+                      </div>
+                              
+                  </div>
+                </div>
+
+
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
